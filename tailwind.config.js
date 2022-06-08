@@ -5,7 +5,8 @@ module.exports = {
       center: true,
     },
     screens: {
-      '4xl': "1929px",
+      '4xl': { 'raw': '(min-height: 1230px)' },
+      'tall': { 'raw': '(min-height: 1230px)' } 
     },
     gridTemplateColumns: {
       '1fr': '1fr 1fr',

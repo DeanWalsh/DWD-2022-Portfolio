@@ -474,12 +474,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
-@media (min-width: 1929px) {
-  .container {
-    max-width: 1929px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
@@ -854,7 +848,7 @@ header {
   padding: 5px;
 }
 
-@media (min-width: 1929px) {
+@media (min-height: 1230px) {
   .\34xl\:grid {
     display: grid;
   }
