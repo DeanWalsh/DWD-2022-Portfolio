@@ -25,11 +25,11 @@
 
 <body>
     <div id="wrapper" class=" bg-sky-200">
-        <nav class="bg-sky-400  py-6 w-full flex justify-around">
+        <nav class="flex bg-sky-400  py-6 w-full justify-around">
             <div class="nav-title">
-                <a href="/"><h1 class=" text-3xl font-semibold">Dean Walsh Dev</h1></a>
+                <a href="/"><h1 class=" text-lg lg:text-3xl font-semibold">Dean Walsh Dev</h1></a>
             </div>
-            <div class="nav-links flex items-center font-semibold text-xl">
+            <div class="nav-links hidden lg:flex items-center font-semibold text-xl">
                 <a href="/">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="#about">About</a>
@@ -56,7 +56,7 @@
         <div class="nav-bg absolute  z-0"></div>
         <main class="container max-w-5xl z-0">
             <section id="home" class="4xl:grid min-h-screen animate__animated animate__fadeInUp">
-                <header class="z-10 grid grid-cols-1fr">
+                <header class="z-10 lg:grid grid-cols-1fr">
                     <div class="profile-picture">
                         <img class=" h-4/5" src="/img/Humaaans - Wireframe.png" alt="Dean Walsh">
                     </div>
@@ -123,8 +123,8 @@
                 <h2 class="projects-title text-4xl font-bold text-center pt-16">Projects</h2>
                 <div class="projects-container">
 
-                    <article class="project grid grid-cols-1fr my-28 ">
-                        <div class="project-pic project-a justify-self-start"><img src="/img/gco_screenshot.png" alt=""></div>
+                    <article class="project lg:grid grid-cols-1fr my-28 ">
+                        <div class="project-pic lg:project-a justify-self-start"><img src="/img/gco_screenshot.png" alt=""></div>
                         <div class="project-description">
                             <h3 class="project-title text-3xl font-medium pb-4">GCO</h3>
                             <p class="pb-4">Live Prestashop E-commerce website using PHP (Symphony Framework). Heavily modified php template files (.tpl).
@@ -133,7 +133,7 @@
                                 <a href="https://gamingco.co.uk" target="_blank"><button class="project-btn text-center mr-2">Live</button></a>
                                 <a><button class="project-btn text-center mr-2 line-through">Github</button></a>
                             </div>
-                            <div class="project-stack flex">
+                            <div class="project-stack lg:flex">
                                 <button class="tech-btn mr-2">Javascript</button>
                                 <button class="tech-btn mr-2">CSS</button>
                                 <button class="tech-btn mr-2">PHP</button>
@@ -141,7 +141,7 @@
                         </div>
                     </article>
 
-                    <article class="project grid grid-cols-1fr mb-28">
+                    <article class="project lg:grid grid-cols-1fr mb-28">
                         <div class="project-description">
                             <h3 class="project-title text-3xl font-medium pb-4">Photography Template</h3>
                             <p class="pb-4">Website created for an amateur photographer using Vue.js that incorporates Vue Router, SPA, slots & SASS. 
@@ -150,13 +150,13 @@
                                     <a href="https://deanwalshphotographytemplate.netlify.app/" target="_blank"><button class="project-btn text-center mr-2">Live</button></a>
                                     <a href="https://github.com/DeanWalsh/PhotographyTemplate" target="_blank" class="line-through"><button class="project-btn text-center mr-2 ">Github</button></a>    
                                 </div>
-                                <div class="project-stack flex">
+                                <div class="project-stack lg:flex">
                                     <button class="tech-btn mr-2">Vue 3</button>
                                     <button class="tech-btn mr-2">Javascript</button>
                                     <button class="tech-btn mr-2">SASS</button>
                                 </div>
                             </div>
-                        <div class="project-pic project-b justify-self-end"><img src="/img/Photography-Template.png" alt=""></div>
+                        <div class="project-pic lg:project-b justify-self-end"><img src="/img/Photography-Template.png" alt=""></div>
                     </article>
 
                 </div>
