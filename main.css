@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+--text_dark: #020c14;
+--text_default: #05131f;
+--text_light: #1b2f41;
+--color_light: #effaff;
+--color_accent: #64d1ff;
+--color_primary: #38bdf8;
+--color_bg: #bae6fd;
+}
+
+* {
+    color: var(--text_dark);
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.socials {
+    fill: var(--text_dark);
+    margin: 0 1rem;
+}
+
+.socials:hover {
+    transition: .3s;
+    fill: var(--color_light);
+}
+
+.nav-links a {
+    margin: 0 2rem;
+}
+
+.nav-links a:hover, .nav-title h1:hover {
+    transition: .3s;
+    color: var(--color_light);
+}
+
+.nav-bg {
+    width: 100%;
+    height: 25vh;
+    background-image: url(/svg/wave-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header {
+    margin-top: 3.4rem;
+}
+
+.project-pic {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    align-self: center;
+}
+
+.project-pic:after {
+    content: "";
+    display: block;
+    height: 217px;
+    position: absolute;
+    top: 0;
+    width: 384px;
+    z-index: -1;
+}
+
+.project-a::after {
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+    background-color: var(--color_accent);
+}
+.project-b::after {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+    background-color: var(--color_light);
+}
+
+.tech-btn {
+    border: var(--text_light) 3px solid;
+    min-width: 160px;
+    height: 50px;
+    color: var(--text_light);
+    padding: 5px 10px;
+    font-weight: 500;
+    background-color: var(--color_light);
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+
+.project-btn {
+    min-width: 160px;
+    height: 50px;
+    color: var(--color_light);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--color_primary);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.project-btn:hover {
+    transition: all 0.3s ease;
+    background-color: var(--color_accent);
+    color: var(--text_light);
+}
+
+.btn {
+    min-width: 160px;
+    height: 50px;
+    color: var(--color_light);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--color_primary);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+  }
+  .btn:hover {
+    border-radius: 50px;
+    padding-right: 24px;
+    padding-left:8px;
+    background: var(--color_accent);
+    color: var(--text_light);
+  }
+  .btn:hover:after {
+    opacity: 1;
+    right: 20px;
+  }
+  .btn:after {
+    content: "\00BB";
+    position: absolute;
+    color: var(--text_light);
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 4px;
+    right: -20px;
+    transition: 0.3s;
+  }
+
+.skills img {
+    margin: auto;
+}
+
+.skill p {
+    text-align: center;
+}
+
+.arrow-down  {
+    stroke: var(--text_dark);
+    width: 100px;
+    margin: 2vh auto 0;
+}
+.arrow-up  {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    stroke: var(--text_dark);
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border: var(--text_default) 3px solid;
+    padding: 10px;
+    background-color: var(--color_light);
+}
+
+.arrow-up:hover {
+    transition: all .3s ease-in-out;
+    padding: 5px;
+}
+
+
