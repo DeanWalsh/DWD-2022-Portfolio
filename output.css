@@ -795,9 +795,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 :root {
   --text_dark: #020c14;
   --text_default: #05131f;
-  --text_light: rgb(27, 47, 65);
-  --color_light: rgb(239, 250, 255);
-  --color_accent: rgb(100, 209, 255);
+  --text_light: #1b2f41;
+  --color_light: #effaff;
+  --color_accent: #64d1ff;
   --color_primary: #38bdf8;
   --color_bg: #bae6fd;
 }
@@ -865,6 +865,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-top: -1px;
 }
 
 header {
@@ -1105,6 +1106,7 @@ header {
 }
 
 form {
+  margin: 2rem;
   grid-column: 1;
   grid-row: 1;
 }
@@ -1199,6 +1201,10 @@ footer {
     display: flex;
   }
 
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .sm\:justify-end {
     justify-content: flex-end;
   }
@@ -1210,6 +1216,11 @@ footer {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

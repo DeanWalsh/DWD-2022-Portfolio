@@ -72,6 +72,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    margin-top: -1px;
 }
 
 header {
@@ -303,6 +304,7 @@ header {
 }
 
 form {
+    margin: 2rem;
     grid-column: 1;
     grid-row: 1;
 }
