@@ -25,18 +25,19 @@
 
 <body>
     <div id="wrapper" class=" bg-sky-200">
-        <nav class="flex bg-sky-400  py-6 w-full justify-around">
+        <nav class="md:flex bg-sky-400  py-6 lg:w-full md:justify-around">
             <div class="nav-title">
-                <a href="/"><h1 class=" text-lg lg:text-3xl font-semibold">Dean Walsh Dev</h1></a>
+                <a href="/"><h1 class="ml-8 text-2xl lg:ml-0 lg:text-3xl font-semibold">Dean Walsh Dev</h1></a>
             </div>
-            <div id="burger" class="burger-container"></div>
-            <div id="links" class="nav-links animate__animated hidden lg:flex items-center font-semibold text-xl">
+            <div id="burger" class="burger-container animate__animated"></div>
+            <div id="links" class="nav-links animate__faster hidden lg:flex items-center font-semibold text-xl">
                 <a href="#wrapper">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
+                <div id="close"></div>
             </div>
-            <div id="socials" class="nav-socials animate__animated hidden lg:flex items-center">
+            <div id="socials" class="nav-socials animate__faster hidden lg:flex items-center">
                 <a href="https://github.com/DeanWalsh" target="_blank"><svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path
@@ -57,13 +58,13 @@
         <div class="nav-bg absolute  z-0"></div>
         <main class="container max-w-5xl z-0">
             <section id="home" class="4xl:grid min-h-screen animate__animated animate__fadeInUp">
-                <header class="z-10 lg:grid grid-cols-1fr">
+                <header class="z-10 md:grid md:grid-cols-1fr">
                     <div class="profile-picture">
-                        <img class=" h-4/5" src="/img/Humaaans - Wireframe.png" alt="Dean Walsh">
+                        <img class="md:w-3/5 xl:w-full lg::h-4/5" src="/img/Humaaans - Wireframe.png" alt="Dean Walsh">
                     </div>
-                    <section class="header-about px-12">
+                    <section class="header-about px-12 content-center align-middle">
                         <h1 class="text-4xl 4xl:text-5xl font-bold 4xl:p-4 p-2">Frontend Developer.</h1>
-                        <h2 class=" text-2xl 4xl:text-2xl font-medium 4xl:p-4 p-2 italic">Hi, I'm Dean. I design and develop websites whilst giving
+                        <h2 class="text-xl sm:text-2xl 4xl:text-2xl font-medium 4xl:p-4 p-2 italic">Hi, I'm Dean. I design and develop websites whilst giving
                             extra care to CSS!</h2>
                         <p class="4xl:p-4 p-2 font-normal text-base 4xl:text-lg leading-relaxed">With over 3 years of experience and a passion
                             to learn new technologies helps me to deliver quality websites and applications!</p>
@@ -117,14 +118,14 @@
                         </div>
                     </div>
                 </div>
-                <a class="grid arrow-down animate__animated animate__shakeY animate__delay-5s" href="#projects"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path></svg></a>
+                <a class="hidden pb-14 lg:grid arrow-down animate__animated animate__shakeY animate__delay-5s" href="#projects"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path></svg></a>
             </section>
 
             <section id="projects" class=" min-h-screen">
-                <h2 class="projects-title text-4xl font-bold text-center pt-16">Projects</h2>
+                <h2 class="projects-title text-4xl font-bold text-center pt-10">Projects</h2>
                 <div class="projects-container lg:px-4 xl:px-0">
 
-                    <article class="project lg:grid grid-cols-1fr my-28 mx-auto w-4/5 lg:w-full">
+                    <article class="project lg:grid grid-cols-1fr my-12 lg:my-28 mx-auto w-4/5 lg:w-full">
                         <div class="project-pic project-a mx-auto justify-self-start"><img src="/img/gco_screenshot.png" alt=""></div>
                         <div class="project-description text-center lg:text-left">
                             <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">GCO</h3>
@@ -142,7 +143,7 @@
                         </div>
                     </article>
 
-                    <article class="project lg:grid grid-cols-1fr mb-28 mx-auto w-4/5 lg:w-full">
+                    <article class="project lg:grid grid-cols-1fr lg:mb-28 mx-auto w-4/5 lg:w-full">
                         <div class="project-pic project-b mx-auto justify-self-end"><img src="/img/Photography-Template.png" alt=""></div>
                         <div class="project-description text-center col-start-1 row-start-1 lg:text-left">
                             <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">Photography Template</h3>
@@ -167,7 +168,7 @@
                     <picture></picture>
                 </div>
                 <div class="about-description">
-                    <h2 class="about-title text-4xl font-bold text-center py-16">About Me</h2>
+                    <h2 class="about-title text-4xl font-bold text-center py-10">About Me</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione corporis in ipsa veritatis
                         consequatur suscipit odio natus, consectetur molestiae praesentium?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione corporis in ipsa veritatis
@@ -177,7 +178,7 @@
             </section>
             <section id="contact"></section>
         </main>
-        <!-- <a href="#wrapper"><svg class="arrow-up" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"></path></svg></a> -->
+        <a class="hidden lg:block" href="#wrapper"><svg class="arrow-up" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"></path></svg></a>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#38bdf8" fill-opacity="1"
                 d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,160C840,160,960,192,1080,202.7C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">

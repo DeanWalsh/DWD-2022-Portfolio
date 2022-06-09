@@ -534,9 +534,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.my-28 {
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .mt-4 {
@@ -551,10 +555,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
-}
-
 .block {
   display: block;
 }
@@ -563,16 +563,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .hidden {
   display: none;
-}
-
-.h-4\/5 {
-  height: 80%;
 }
 
 .h-1\/6 {
@@ -583,8 +575,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
-.w-full {
-  width: 100%;
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-2\/4 {
@@ -593,6 +585,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-5xl {
@@ -607,16 +603,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-around {
-  justify-content: space-around;
 }
 
 .justify-self-start {
@@ -666,13 +662,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pb-4 {
@@ -683,9 +683,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-xl {
@@ -696,11 +704,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-base {
@@ -758,7 +761,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Ubuntu', sans-serif;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1023px) {
   *{
     scroll-behavior: smooth;
   }
@@ -946,32 +949,52 @@ header {
 }
 
 .burger-container {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
   display: block;
   position: fixed;
   right: 0;
   top: 0;
-  background-color: var(--color_light);
-  border-radius: 0 0 0 60px;
-  background-size: 75%;
-  background-position: top right;
+  background-size: 65%;
+  background-position: 25px 3px;
   background-repeat: no-repeat;
-  z-index: 80;
   cursor: pointer;
+  background-color: var(--color_light);
+  border-radius: 0 0 0 80px;
+  z-index: 10;
 }
 
 #burger {
+  /* z-index: 80; */
+  /* transition: background-image .5s linear; */
   background-image: url(/svg/9851132801553239378.svg);
 }
 
 #close {
+  background-color: var(--color_bg);
+  border-radius: 0 0 0 80px;
+  height: 75px;
+  width: 75px;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-size: 65%;
+  background-position: 25px 3px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 80;
+  /* transition: background-image .5s linear; */
   background-image: url(/svg/487517051553239370.svg);
 }
 
-@media (min-width: 1028px) {
-  #burger {
-    display: none;
+.close-open {
+  display: block!important;
+}
+
+@media (min-width: 1024px) {
+  #burger, #close {
+    display: none!important;
   }
 }
 
@@ -992,8 +1015,11 @@ header {
 }
 
 .nav-open a {
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   display: grid;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   text-align: center;
 }
 
@@ -1006,6 +1032,13 @@ header {
   margin: 0 1rem 1rem 0;
 }
 
+@media (min-width: 640px) {
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:my-4 {
     margin-top: 1rem;
@@ -1016,19 +1049,85 @@ header {
     display: inline;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
+  .md\:auto-cols-fr {
+    grid-auto-columns: minmax(0, 1fr);
+  }
+
+  .md\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .md\:grid-flow-col-dense {
+    grid-auto-flow: column dense;
+  }
+
+  .md\:grid-cols-1fr {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .md\:content-center {
+    align-content: center;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .md\:content-none {
+    --tw-content: none;
+    content: var(--tw-content);
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:my-28 {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:mr-2 {
     margin-right: 0.5rem;
+  }
+
+  .lg\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
@@ -1041,6 +1140,10 @@ header {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:grid-cols-1fr {
+    grid-template-columns: 1fr 1fr;
   }
 
   .lg\:flex-nowrap {
@@ -1064,9 +1167,18 @@ header {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .lg\:content-none {
+    --tw-content: none;
+    content: var(--tw-content);
+  }
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-full {
+    width: 100%;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1111,3 +1223,4 @@ header {
     line-height: 1.75rem;
   }
 }
+

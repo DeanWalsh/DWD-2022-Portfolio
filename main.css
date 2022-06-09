@@ -18,7 +18,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1023px) {
     *{
         scroll-behavior: smooth;
     }
@@ -199,32 +199,52 @@ header {
     padding: 5px;
 }
 .burger-container {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     display: block;
     position: fixed;
     right: 0;
     top: 0;
-    background-color: var(--color_light);
-    border-radius: 0 0 0 60px;
-    background-size: 75%;
-    background-position: top right;
+    background-size: 65%;
+    background-position: 25px 3px;
     background-repeat: no-repeat;
-    z-index: 80;   
     cursor: pointer;
+    background-color: var(--color_light);
+    border-radius: 0 0 0 80px;
+    z-index: 10;
 }
 
 #burger {
+    /* z-index: 80; */
+    /* transition: background-image .5s linear; */
     background-image: url(/svg/9851132801553239378.svg);
 }
 
 #close {
+    background-color: var(--color_bg);
+    border-radius: 0 0 0 80px;
+    height: 75px;
+    width: 75px;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-size: 65%;
+    background-position: 25px 3px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 80;
+    /* transition: background-image .5s linear; */
     background-image: url(/svg/487517051553239370.svg);
 }
 
-@media (min-width: 1028px) {
-    #burger {
-        display: none;
+.close-open {
+    display: block!important;
+}
+
+@media (min-width: 1024px) {
+    #burger, #close {
+        display: none!important;
     }
 }
 
@@ -245,8 +265,9 @@ header {
 }
 
 .nav-open a {
-    margin-top: 3rem;
+    margin: 3rem auto 0;
     display: grid;
+    width: max-content;
     text-align: center;
 }
 
@@ -258,3 +279,4 @@ header {
     z-index: 105;
     margin: 0 1rem 1rem 0;
 }
+
