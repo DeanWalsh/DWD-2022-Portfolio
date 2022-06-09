@@ -5,9 +5,9 @@
 :root {
 --text_dark: #020c14;
 --text_default: #05131f;
---text_light: #1b2f41;
---color_light: #effaff;
---color_accent: #64d1ff;
+--text_light: rgb(27, 47, 65);
+--color_light: rgb(239, 250, 255);
+--color_accent: rgb(100, 209, 255);
 --color_primary: #38bdf8;
 --color_bg: #bae6fd;
 }
@@ -17,6 +17,28 @@
     letter-spacing: 1px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #64d1ff #effaff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #effaff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #64d1ff;
+    border-radius: 50px;
+    border: 3px double #1b2f41;
+  }
 
 @media (min-width: 1023px) {
     *{
@@ -280,3 +302,31 @@ header {
     margin: 0 1rem 1rem 0;
 }
 
+.footer-bg {
+    background-image: url(/svg/wave-bottom.svg);
+    width: 100%;
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: static;
+    z-index: 0;
+}
+
+footer {
+    background-color: var(--text_light);
+}
+
+.footer-socials {
+    fill: var(--color_light);
+    margin: 0 1rem;
+}
+
+.footer-socials:hover {
+    transition: .3s;
+    fill: var(--color_primary);
+}
+
+.footer-copyright {
+    color: var(--color_light);
+}
