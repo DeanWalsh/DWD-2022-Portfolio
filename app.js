@@ -5,26 +5,26 @@ const socials = document.getElementById('socials');
 
 burger.addEventListener('click', () => {
     if (nav.classList.contains('nav-open')) {} else {
-        nav.classList.add('nav-open'), 
-        nav.classList.add('animate__slideInRight'), 
-        nav.classList.add('animate__animated');
-        socials.classList.add('socials-open'), 
-        socials.classList.add('animate__slideInRight'), 
-        socials.classList.add('animate__animated');
-        close.classList.add('close-open'), 
-        close.classList.add('animate__slideInRight'),
-        close.classList.add('animate__animated');
+        nav.classList.add('nav-open'),
+            nav.classList.add('animate__slideInRight'),
+            nav.classList.add('animate__animated');
+        socials.classList.add('socials-open'),
+            socials.classList.add('animate__slideInRight'),
+            socials.classList.add('animate__animated');
+        close.classList.add('close-open'),
+            close.classList.add('animate__slideInRight'),
+            close.classList.add('animate__animated');
     }
     document.addEventListener('click', (e) => {
         if (nav.classList.contains('nav-open') &&
             (e.target.tagname === 'links a' || e.target.tagname === 'socials a') ||
-            (e.target.id !== 'burger' && e.target.id !== 'links') || 
+            (e.target.id !== 'burger' && e.target.id !== 'links') ||
             (e.target.id === 'close')) {
-    
+
             nav.classList.add('animate__slideOutRight');
             socials.classList.add('animate__slideOutRight');
             close.classList.add('animate__slideOutRight');
-    
+
             setTimeout(() => {
                 close.classList.remove('animate__slideOutRight');
                 close.classList.remove('animate__slideInRight');
@@ -43,5 +43,5 @@ burger.addEventListener('click', () => {
     });
 });
 
-
-
+const year = document.getElementById('year');
+year.innerHTML = new Date().getFullYear();

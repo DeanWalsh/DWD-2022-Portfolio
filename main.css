@@ -5,9 +5,9 @@
 :root {
 --text_dark: #020c14;
 --text_default: #05131f;
---text_light: rgb(27, 47, 65);
---color_light: rgb(239, 250, 255);
---color_accent: rgb(100, 209, 255);
+--text_light: #1b2f41;
+--color_light: #effaff;
+--color_accent: #64d1ff;
 --color_primary: #38bdf8;
 --color_bg: #bae6fd;
 }
