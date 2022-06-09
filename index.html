@@ -29,13 +29,14 @@
             <div class="nav-title">
                 <a href="/"><h1 class=" text-lg lg:text-3xl font-semibold">Dean Walsh Dev</h1></a>
             </div>
-            <div class="nav-links hidden lg:flex items-center font-semibold text-xl">
-                <a href="/">Home</a>
+            <div id="burger" class="burger-container"></div>
+            <div id="links" class="nav-links animate__animated hidden lg:flex items-center font-semibold text-xl">
+                <a href="#wrapper">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
-            <div class="nav-socials flex items-center">
+            <div id="socials" class="nav-socials animate__animated hidden lg:flex items-center">
                 <a href="https://github.com/DeanWalsh" target="_blank"><svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <path
@@ -60,58 +61,58 @@
                     <div class="profile-picture">
                         <img class=" h-4/5" src="/img/Humaaans - Wireframe.png" alt="Dean Walsh">
                     </div>
-                    <section class="header-about">
+                    <section class="header-about px-12">
                         <h1 class="text-4xl 4xl:text-5xl font-bold 4xl:p-4 p-2">Frontend Developer.</h1>
                         <h2 class=" text-2xl 4xl:text-2xl font-medium 4xl:p-4 p-2 italic">Hi, I'm Dean. I design and develop websites whilst giving
                             extra care to CSS!</h2>
                         <p class="4xl:p-4 p-2 font-normal text-base 4xl:text-lg leading-relaxed">With over 3 years of experience and a passion
                             to learn new technologies helps me to deliver quality websites and applications!</p>
-                        <button class="btn my-4">Contact Me</button>
+                        <button class="btn block mt-4 mb-8 mx-auto md:my-4 md:inline">Contact Me</button>
                     </section>
                 </header>
 
                 <div class="skills">
                     <!-- Insert Modals for each skill (clickable) to shw experience with skill  -->
-                    <h2 class="text-3xl text-center font-bold mb-6">Skills & Tools</h2>
+                    <h2 class="text-3xl text-center font-bold my-6">Skills & Tools</h2>
                     <div class="skills-container flex flex-wrap justify-center">
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/html5.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/html5.svg" alt="">
                             <p>HTML 5</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/css3.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/css3.svg" alt="">
                             <p>CSS 3</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/javascript.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/javascript.svg" alt="">
                             <p>Javascript</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/vuejs.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/vuejs.svg" alt="">
                             <p>Vue 3</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/sass.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/sass.svg" alt="">
                             <p>SASS</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/tailwind-css.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/tailwind-css.svg" alt="">
                             <p>Tailwind</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/mysql.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/mysql.svg" alt="">
                             <p>MySQL</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/visualstudio.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/visualstudio.svg" alt="">
                             <p>VS Code</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/git.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/git.svg" alt="">
                             <p>Git</p>
                         </div>
                         <div class="skill">
-                            <img class=" w-3/4 4xl:w-full py-2 px-8 4xl:py-6 4xl:px-8" src="/svg/figma.svg" alt="">
+                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-6 4xl:px-8" src="/svg/figma.svg" alt="">
                             <p>Figma</p>
                         </div>
                     </div>
@@ -121,47 +122,47 @@
 
             <section id="projects" class=" min-h-screen">
                 <h2 class="projects-title text-4xl font-bold text-center pt-16">Projects</h2>
-                <div class="projects-container">
+                <div class="projects-container lg:px-4 xl:px-0">
 
-                    <article class="project lg:grid grid-cols-1fr my-28 ">
-                        <div class="project-pic lg:project-a justify-self-start"><img src="/img/gco_screenshot.png" alt=""></div>
-                        <div class="project-description">
-                            <h3 class="project-title text-3xl font-medium pb-4">GCO</h3>
+                    <article class="project lg:grid grid-cols-1fr my-28 mx-auto w-4/5 lg:w-full">
+                        <div class="project-pic project-a mx-auto justify-self-start"><img src="/img/gco_screenshot.png" alt=""></div>
+                        <div class="project-description text-center lg:text-left">
+                            <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">GCO</h3>
                             <p class="pb-4">Live Prestashop E-commerce website using PHP (Symphony Framework). Heavily modified php template files (.tpl).
-                                Designed and developed from the barebones default theme whilst working with multiple third-party plugins and modules.</p>
+                                Designed, developed and maintained from the barebones default theme whilst working with multiple third-party plugins and modules.</p>
                             <div class="project-links pb-4">
                                 <a href="https://gamingco.co.uk" target="_blank"><button class="project-btn text-center mr-2">Live</button></a>
                                 <a><button class="project-btn text-center mr-2 line-through">Github</button></a>
                             </div>
-                            <div class="project-stack lg:flex">
-                                <button class="tech-btn mr-2">Javascript</button>
-                                <button class="tech-btn mr-2">CSS</button>
-                                <button class="tech-btn mr-2">PHP</button>
+                            <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
+                                <button class="tech-btn lg:mr-2">Javascript</button>
+                                <button class="tech-btn lg:mr-2">CSS</button>
+                                <button class="tech-btn lg:mr-2">PHP</button>
                             </div>
                         </div>
                     </article>
 
-                    <article class="project lg:grid grid-cols-1fr mb-28">
-                        <div class="project-description">
-                            <h3 class="project-title text-3xl font-medium pb-4">Photography Template</h3>
+                    <article class="project lg:grid grid-cols-1fr mb-28 mx-auto w-4/5 lg:w-full">
+                        <div class="project-pic project-b mx-auto justify-self-end"><img src="/img/Photography-Template.png" alt=""></div>
+                        <div class="project-description text-center col-start-1 row-start-1 lg:text-left">
+                            <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">Photography Template</h3>
                             <p class="pb-4">Website created for an amateur photographer using Vue.js that incorporates Vue Router, SPA, slots & SASS. 
                                 Landing page uses a auto-slider and houses an interactive image collage.</p>
                                 <div class="project-links pb-4">
                                     <a href="https://deanwalshphotographytemplate.netlify.app/" target="_blank"><button class="project-btn text-center mr-2">Live</button></a>
                                     <a href="https://github.com/DeanWalsh/PhotographyTemplate" target="_blank" class="line-through"><button class="project-btn text-center mr-2 ">Github</button></a>    
                                 </div>
-                                <div class="project-stack lg:flex">
-                                    <button class="tech-btn mr-2">Vue 3</button>
-                                    <button class="tech-btn mr-2">Javascript</button>
-                                    <button class="tech-btn mr-2">SASS</button>
+                                <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
+                                    <button class="tech-btn lg:mr-2">Vue 3</button>
+                                    <button class="tech-btn lg:mr-2">Javascript</button>
+                                    <button class="tech-btn lg:mr-2">SASS</button>
                                 </div>
                             </div>
-                        <div class="project-pic lg:project-b justify-self-end"><img src="/img/Photography-Template.png" alt=""></div>
                     </article>
 
                 </div>
             </section>
-            <section id="about" class="grid grid-cols-1fr">
+            <section id="about" class="w-4/5 lg:w-full mx-auto text-center lg:grid grid-cols-1fr">
                 <div class="about-picture">
                     <picture></picture>
                 </div>
@@ -176,7 +177,7 @@
             </section>
             <section id="contact"></section>
         </main>
-        <a href="#wrapper"><svg class="arrow-up" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"></path></svg></a>
+        <!-- <a href="#wrapper"><svg class="arrow-up" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18"></path></svg></a> -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#38bdf8" fill-opacity="1"
                 d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,160C840,160,960,192,1080,202.7C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">

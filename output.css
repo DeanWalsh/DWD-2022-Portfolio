@@ -516,9 +516,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-28 {
@@ -526,8 +539,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 7rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mr-2 {
@@ -536,6 +553,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-28 {
   margin-bottom: 7rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -566,8 +587,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-3\/4 {
-  width: 75%;
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .max-w-5xl {
@@ -612,11 +637,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -626,14 +646,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-16 {
@@ -653,9 +683,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -678,9 +708,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-semibold {
@@ -726,7 +756,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: var(--text_dark);
   letter-spacing: 1px;
   font-family: 'Ubuntu', sans-serif;
-  scroll-behavior: smooth;
+}
+
+@media (min-width: 767px) {
+  *{
+    scroll-behavior: smooth;
+  }
 }
 
 .socials {
@@ -768,32 +803,34 @@ header {
   align-self: center;
 }
 
-.project-pic:after {
-  content: "";
-  display: block;
-  height: 217px;
-  position: absolute;
-  top: 0;
-  width: 384px;
-  z-index: -1;
-}
+@media (min-width: 1030px) {
+  .project-pic:after {
+    content: "";
+    display: block;
+    height: 217px;
+    position: absolute;
+    top: 0;
+    width: 384px;
+    z-index: -1;
+  }
 
-.project-a::after {
-  transform: rotate(-7deg);
-  background-color: var(--color_accent);
-}
+  .project-a::after {
+    transform: rotate(-7deg);
+    background-color: var(--color_accent);
+  }
 
-.project-b::after {
-  transform: rotate(7deg);
-  background-color: var(--color_light);
+  .project-b::after {
+    transform: rotate(7deg);
+    background-color: var(--color_light);
+  }
 }
 
 .tech-btn {
   border: var(--text_light) 3px solid;
-  min-width: 160px;
-  height: 50px;
+  min-width: 80px;
+  height: 40px;
   color: var(--text_light);
-  padding: 5px 10px;
+  padding: 3px 7px;
   font-weight: 500;
   background-color: var(--color_light);
   display: inline-block;
@@ -801,17 +838,33 @@ header {
   cursor: default;
 }
 
+@media (min-width: 767px) {
+  .tech-btn {
+    min-width: 160px;
+    height: 50px;
+    padding: 5px 10px;
+  }
+}
+
 .project-btn {
-  min-width: 160px;
-  height: 50px;
+  min-width: 80px;
+  height: 40px;
   color: var(--color_light);
-  padding: 5px 10px;
+  padding: 3px 7px;
   font-weight: bold;
   cursor: pointer;
   background-color: var(--color_primary);
   position: relative;
   display: inline-block;
   overflow: hidden;
+}
+
+@media (min-width: 767px) {
+  .project-btn {
+    min-width: 160px;
+    height: 50px;
+    padding: 5px 10px;
+  }
 }
 
 .project-btn:hover {
@@ -829,7 +882,6 @@ header {
   cursor: pointer;
   background-color: var(--color_primary);
   position: relative;
-  display: inline-block;
   overflow: hidden;
   transition: all 0.3s ease;
   border-radius: 50px;
@@ -885,6 +937,7 @@ header {
   border: var(--text_default) 3px solid;
   padding: 10px;
   background-color: var(--color_light);
+  z-index: 50;
 }
 
 .arrow-up:hover {
@@ -892,7 +945,92 @@ header {
   padding: 5px;
 }
 
+.burger-container {
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: var(--color_light);
+  border-radius: 0 0 0 60px;
+  background-size: 75%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: 80;
+  cursor: pointer;
+}
+
+#burger {
+  background-image: url(/svg/9851132801553239378.svg);
+}
+
+#close {
+  background-image: url(/svg/487517051553239370.svg);
+}
+
+@media (min-width: 1028px) {
+  #burger {
+    display: none;
+  }
+}
+
+.nav-open {
+  display: block!important;
+  background-color: var(--color_primary);
+  width: 100vw;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 60;
+  border-left: var(--color_light) 5px solid;
+}
+
+.nav-open a:first-child {
+  margin-top: 6rem;
+}
+
+.nav-open a {
+  margin-top: 3rem;
+  display: grid;
+  text-align: center;
+}
+
+.socials-open {
+  display: flex!important;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 105;
+  margin: 0 1rem 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md\:inline {
+    display: inline;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -901,9 +1039,37 @@ header {
     display: grid;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -945,5 +1111,3 @@ header {
     line-height: 1.75rem;
   }
 }
-
-

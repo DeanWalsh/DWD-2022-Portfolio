@@ -16,7 +16,12 @@
     color: var(--text_dark);
     letter-spacing: 1px;
     font-family: 'Ubuntu', sans-serif;
-    scroll-behavior: smooth;
+}
+
+@media (min-width: 767px) {
+    *{
+        scroll-behavior: smooth;
+    }
 }
 
 .socials {
@@ -58,6 +63,7 @@ header {
     align-self: center;
 }
 
+@media (min-width: 1030px) {
 .project-pic:after {
     content: "";
     display: block;
@@ -77,14 +83,14 @@ header {
     -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
     background-color: var(--color_light);
-}
+}}
 
 .tech-btn {
     border: var(--text_light) 3px solid;
-    min-width: 160px;
-    height: 50px;
+    min-width: 80px;
+    height: 40px;
     color: var(--text_light);
-    padding: 5px 10px;
+    padding: 3px 7px;
     font-weight: 500;
     background-color: var(--color_light);
     display: inline-block;
@@ -92,11 +98,18 @@ header {
     cursor: default;
 }
 
-.project-btn {
+@media (min-width: 767px) {
+.tech-btn {
     min-width: 160px;
     height: 50px;
-    color: var(--color_light);
     padding: 5px 10px;
+}}
+
+.project-btn {
+    min-width: 80px;
+    height: 40px;
+    color: var(--color_light);
+    padding: 3px 7px;
     font-weight: bold;
     cursor: pointer;
     background-color: var(--color_primary);
@@ -104,6 +117,13 @@ header {
     display: inline-block;
     overflow: hidden;
 }
+
+@media (min-width: 767px) {
+.project-btn {
+    min-width: 160px;
+    height: 50px;
+    padding: 5px 10px;
+}}
 
 .project-btn:hover {
     transition: all 0.3s ease;
@@ -120,7 +140,6 @@ header {
     cursor: pointer;
     background-color: var(--color_primary);
     position: relative;
-    display: inline-block;
     overflow: hidden;
     transition: all 0.3s ease;
     border-radius: 50px;
@@ -172,11 +191,70 @@ header {
     border: var(--text_default) 3px solid;
     padding: 10px;
     background-color: var(--color_light);
+    z-index: 50;
 }
 
 .arrow-up:hover {
     transition: all .3s ease-in-out;
     padding: 5px;
 }
+.burger-container {
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: var(--color_light);
+    border-radius: 0 0 0 60px;
+    background-size: 75%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: 80;   
+    cursor: pointer;
+}
 
+#burger {
+    background-image: url(/svg/9851132801553239378.svg);
+}
 
+#close {
+    background-image: url(/svg/487517051553239370.svg);
+}
+
+@media (min-width: 1028px) {
+    #burger {
+        display: none;
+    }
+}
+
+.nav-open {
+    display: block!important;
+    background-color: var(--color_primary);
+    width: 100vw;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    position: fixed;
+    z-index: 60;
+    border-left: var(--color_light) 5px solid;
+}
+
+.nav-open a:first-child {
+    margin-top: 6rem;
+}
+
+.nav-open a {
+    margin-top: 3rem;
+    display: grid;
+    text-align: center;
+}
+
+.socials-open {
+    display: flex!important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 105;
+    margin: 0 1rem 1rem 0;
+}
