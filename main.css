@@ -85,7 +85,7 @@ header {
     align-self: center;
 }
 
-@media (min-width: 1030px) {
+@media (min-width: 1024px) {
 .project-pic:after {
     content: "";
     display: block;
