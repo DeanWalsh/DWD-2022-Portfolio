@@ -302,6 +302,60 @@ header {
     margin: 0 1rem 1rem 0;
 }
 
+form {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.contact-socials .socials {
+    fill: var(--text_light);
+}
+
+.contact-socials .socials:hover {
+    fill: var(--text_dark);
+}
+
+.feedback-input {
+  color:var(--text_default);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: var(--color_light);
+  border:2px solid var(--text_dark);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid var(--text_dark); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 10rem;
+  background:var(--text_light);
+  border:0;
+  cursor:pointer;
+  color:var(--color_light);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:var(--text_dark); }
+
 .footer-bg {
     background-image: url(/svg/wave-bottom.svg);
     width: 100%;

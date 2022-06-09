@@ -508,14 +508,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -551,9 +543,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .ml-8 {
@@ -580,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .block {
   display: block;
 }
@@ -592,12 +593,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-1\/6 {
-  height: 16.666667%;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-1\/6 {
+  height: 16.666667%;
 }
 
 .min-h-screen {
@@ -678,10 +679,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -707,9 +704,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pb-14 {
@@ -724,12 +721,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-center {
@@ -1117,6 +1114,65 @@ header {
   margin: 0 1rem 1rem 0;
 }
 
+form {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.contact-socials .socials {
+  fill: var(--text_light);
+}
+
+.contact-socials .socials:hover {
+  fill: var(--text_dark);
+}
+
+.feedback-input {
+  color:var(--text_default);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: var(--color_light);
+  border:2px solid var(--text_dark);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+  border:2px solid var(--text_dark);
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 10rem;
+  background:var(--text_light);
+  border:0;
+  cursor:pointer;
+  color:var(--color_light);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover {
+  background:var(--text_dark);
+}
+
 .footer-bg {
   background-image: url(/svg/wave-bottom.svg);
   width: 100%;
@@ -1234,10 +1290,6 @@ footer {
     margin-top: 9rem;
   }
 
-  .lg\:mt-12 {
-    margin-top: 3rem;
-  }
-
   .lg\:mt-auto {
     margin-top: auto;
   }
@@ -1265,6 +1317,11 @@ footer {
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:pb-4 {
