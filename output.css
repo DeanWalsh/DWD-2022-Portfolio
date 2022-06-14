@@ -737,9 +737,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base {
@@ -747,9 +747,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -1084,16 +1084,22 @@ header {
 }
 
 .nav-open a:first-child {
-  margin-top: 6rem;
+  margin-top: 20vh;
 }
 
 .nav-open a {
-  margin: 3rem auto 0;
+  margin: 10vh auto 0;
   display: grid;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   text-align: center;
+}
+
+@media (max-height: 360px) {
+  .nav-open a {
+    margin: 5vh auto 0;
+  }
 }
 
 .socials-open {
@@ -1213,14 +1219,14 @@ footer {
     padding-bottom: 0px;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1339,6 +1345,11 @@ footer {
     text-align: left;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
@@ -1350,6 +1361,11 @@ footer {
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
