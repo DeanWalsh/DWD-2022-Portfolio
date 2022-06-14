@@ -6,44 +6,53 @@
 --text_dark: #020c14;
 --text_default: #05131f;
 --text_light: #1b2f41;
+
 --color_light: #effaff;
 --color_accent: #64d1ff;
 --color_primary: #38bdf8;
 --color_bg: #bae6fd;
+
+--formal_font: 'Source Code Pro', monospace;
+--informal_font: 'Ubuntu', sans-serif;
+
 }
 
-* {
+body {
     color: var(--text_dark);
     letter-spacing: 1px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--informal_font);
 }
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #64d1ff #effaff;
+    scrollbar-color: var(--color_accent) var(--color_light);
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: 20px;
+    width: 17px;
   }
 
   *::-webkit-scrollbar-track {
-    background: #effaff;
+    background: transparent;
+    margin: 10px 0;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--text_dark);
-    border-radius: 1px;
-    border: 4px double var(--color_primary);
+    background-color: var(--color_accent);
+    border-radius: 10px;
   }
 
 @media (min-width: 1023px) {
     *{
         scroll-behavior: smooth;
     }
+}
+
+nav, footer, h1, h2:not(.header-about h2), h3 {
+    font-family: var(--formal_font);
 }
 
 .socials {
@@ -119,6 +128,7 @@ header {
     display: inline-block;
     text-align: center;
     cursor: default;
+    font-family: var(--formal_font);
 }
 
 @media (min-width: 767px) {
@@ -221,6 +231,16 @@ header {
     transition: all .3s ease-in-out;
     padding: 5px;
 }
+
+#arrow-up {
+    transition: opacity .3s linear;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1!important;
+}
+
 .burger-container {
     height: 75px;
     width: 75px;
@@ -325,7 +345,7 @@ form {
 
 .feedback-input {
   color:var(--text_default);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--formal_font);
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
@@ -349,7 +369,7 @@ textarea {
 }
 
 [type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: var(--formal_font);
   width: 10rem;
   display: block;
   margin: auto;
