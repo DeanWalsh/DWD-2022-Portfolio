@@ -237,9 +237,9 @@ header {
     opacity: 0;
 }
 
-.show {
+@media (min-width: 1024px) {.show {
     opacity: 1!important;
-}
+}}
 
 .burger-container {
     height: 75px;
