@@ -1,3 +1,5 @@
+// Mobile Menu
+
 const burger = document.getElementById('burger');
 const close = document.getElementById('close');
 const nav = document.getElementById('links');
@@ -43,5 +45,23 @@ burger.addEventListener('click', () => {
     });
 });
 
+// Footer Current Year
+
 const year = document.getElementById('year');
 year.innerHTML = new Date().getFullYear();
+
+
+// Scroll up button show on scroll
+
+const myScrollUp = document.getElementById("arrow-up");
+
+myScrollUpFunc = () => {
+    posY = window.scrollY;
+    if (posY >= 900) {
+        myScrollUp.classList.add("show");
+    } else {
+        myScrollUp.classList.remove("show");
+    }
+};
+
+window.addEventListener("scroll", myScrollUpFunc);
