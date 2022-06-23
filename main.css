@@ -200,7 +200,15 @@ header {
     transition: 0.3s;
   }
 
-.skills img {
+.skills {
+    position: relative;
+}
+
+.skill {
+    cursor: pointer;
+}
+  
+.skill img {
     margin: auto;
 }
 
@@ -208,11 +216,50 @@ header {
     text-align: center;
 }
 
+.skills-hover {
+    opacity: 0;
+    /* display: none; */
+    position: absolute;
+    top: -100vh;
+    left: -100vw;
+}
+
+@media (hover: hover) {
+.skill:focus .skills-hover {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+    background-color: var(--color_light);
+    padding: 2rem;
+    border-radius: 5px;
+    border: 3px solid var(--color_accent);
+    z-index: 50;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 0 1000vmax #1b2f417a;
+}}
+
+
+.skill-hover-p {
+    font-size: 1.2em;
+}
+
+
 .arrow-down  {
+    display: none;
     stroke: var(--text_dark);
     width: 100px;
     margin: 2vh auto 0;
 }
+
+@media (min-width: 1024px) and (min-height: 992px) {
+    .arrow-down {
+        display: grid;
+    }
+}
+
+
 .arrow-up  {
     position: fixed;
     bottom: 30px;
@@ -237,7 +284,8 @@ header {
     opacity: 0;
 }
 
-@media (min-width: 1024px) {.show {
+@media (min-width: 1024px) {
+    .show {
     opacity: 1!important;
 }}
 
@@ -338,6 +386,11 @@ form {
 .contact-socials .socials {
     fill: var(--text_light);
 }
+
+@media (max-width: 537px){
+.contact-socials .socials {
+margin-top: 2rem;
+}}
 
 .contact-socials .socials:hover {
     fill: var(--text_dark);
