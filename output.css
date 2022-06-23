@@ -652,10 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-self: end;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .bg-sky-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
@@ -814,16 +810,10 @@ body {
   font-family: var(--informal_font);
 }
 
-/* ===== Scrollbar CSS ===== */
-
-/* Firefox */
-
 * {
   scrollbar-width: auto;
   scrollbar-color: var(--color_accent) var(--color_light);
 }
-
-/* Chrome, Edge, and Safari */
 
 *::-webkit-scrollbar {
   width: 17px;
@@ -840,12 +830,16 @@ body {
 }
 
 @media (min-width: 1023px) {
-  *{
+  * {
     scroll-behavior: smooth;
   }
 }
 
-nav, footer, h1, h2:not(.header-about h2), h3 {
+nav,
+footer,
+h1,
+h2:not(.header-about h2),
+h3 {
   font-family: var(--formal_font);
 }
 
@@ -863,7 +857,8 @@ nav, footer, h1, h2:not(.header-about h2), h3 {
   margin: 0 2rem;
 }
 
-.nav-links a:hover, .nav-title h1:hover {
+.nav-links a:hover,
+.nav-title h1:hover {
   transition: .3s;
   color: var(--color_light);
 }
@@ -977,7 +972,7 @@ header {
 .btn:hover {
   border-radius: 50px;
   padding-right: 24px;
-  padding-left:8px;
+  padding-left: 8px;
   background: var(--color_accent);
   color: var(--text_light);
 }
@@ -1044,7 +1039,7 @@ header {
   font-size: 1.2em;
 }
 
-.arrow-down  {
+.arrow-down {
   display: none;
   stroke: var(--text_dark);
   width: 100px;
@@ -1061,7 +1056,7 @@ header {
   border-radius: 50%;
 }
 
-.arrow-up  {
+.arrow-up {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -1087,7 +1082,7 @@ header {
 
 @media (min-width: 1024px) {
   .show {
-    opacity: 1!important;
+    opacity: 1 !important;
   }
 }
 
@@ -1108,8 +1103,6 @@ header {
 }
 
 #burger {
-  /* z-index: 80; */
-  /* transition: background-image .5s linear; */
   background-image: url(/svg/9851132801553239378.svg);
 }
 
@@ -1127,22 +1120,22 @@ header {
   background-repeat: no-repeat;
   cursor: pointer;
   z-index: 80;
-  /* transition: background-image .5s linear; */
   background-image: url(/svg/487517051553239370.svg);
 }
 
 .close-open {
-  display: block!important;
+  display: block !important;
 }
 
 @media (min-width: 1024px) {
-  #burger, #close {
-    display: none!important;
+  #burger,
+    #close {
+    display: none !important;
   }
 }
 
 .nav-open {
-  display: block!important;
+  display: block !important;
   background-color: var(--color_primary);
   width: 100vw;
   top: 0;
@@ -1173,7 +1166,7 @@ header {
 }
 
 .socials-open {
-  display: flex!important;
+  display: flex !important;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -1191,7 +1184,7 @@ form {
   fill: var(--text_light);
 }
 
-@media (max-width: 537px){
+@media (max-width: 537px) {
   .contact-socials .socials {
     margin-top: 2rem;
   }
@@ -1202,30 +1195,30 @@ form {
 }
 
 .feedback-input {
-  color:var(--text_default);
+  color: var(--text_default);
   font-family: var(--formal_font);
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: var(--color_light);
-  border:2px solid var(--text_dark);
+  border: 2px solid var(--text_dark);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
-  outline:0;
+  outline: 0;
 }
 
 .feedback-input:focus {
-  border:2px solid var(--text_dark);
+  border: 2px solid var(--text_dark);
 }
 
 textarea {
   height: 150px;
   line-height: 150%;
-  resize:vertical;
+  resize: vertical;
 }
 
 [type="submit"] {
@@ -1233,20 +1226,20 @@ textarea {
   width: 10rem;
   display: block;
   margin: auto;
-  background:var(--text_light);
-  border:0;
-  cursor:pointer;
-  color:var(--color_light);
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
+  background: var(--text_light);
+  border: 0;
+  cursor: pointer;
+  color: var(--color_light);
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  margin-top: -4px;
+  font-weight: 700;
 }
 
 [type="submit"]:hover {
-  background:var(--text_dark);
+  background: var(--text_dark);
 }
 
 .footer-bg {
