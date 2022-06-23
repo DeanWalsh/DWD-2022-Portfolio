@@ -259,6 +259,10 @@ header {
     }
 }
 
+.rounded-100 {
+    border-radius: 50%;
+}
+
 
 .arrow-up  {
     position: fixed;

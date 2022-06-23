@@ -648,8 +648,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-self: end;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-sky-200 {
@@ -1051,6 +1051,10 @@ header {
   .arrow-down {
     display: grid;
   }
+}
+
+.rounded-100 {
+  border-radius: 50%;
 }
 
 .arrow-up  {
