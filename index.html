@@ -1,418 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Frontend Developer Portfolio">
-    <meta name="og:title" content="Dean Walsh Dev">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.deanwalsh.dev/">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="stylesheet" href="/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frontend Developer Portfolio" />
+    <meta name="og:title" content="Dean Walsh Dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.deanwalsh.dev/" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/animate.css/animate.css">
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/animate.css/animate.css" />
     <title>Dean Walsh - Portfolio</title>
-</head>
+  </head>
 
-<body>
-    <div id="wrapper" class=" bg-sky-200">
-        <nav class="md:flex bg-sky-400  py-6 lg:w-full md:justify-around">
-            <div class="nav-title">
-                <a href="/">
-                    <h1 class="ml-8 text-2xl lg:ml-0 lg:text-2xl xl:text-3xl font-semibold">Dean Walsh Dev</h1>
-                </a>
+  <body>
+    <div id="wrapper" class="bg-sky-200">
+      <nav class="md:flex bg-sky-400 py-6 lg:w-full md:justify-around">
+        <div class="nav-title">
+          <a href="/">
+            <h1
+              class="ml-8 text-2xl lg:ml-0 lg:text-2xl xl:text-3xl font-semibold"
+            >
+              Dean Walsh Dev
+            </h1>
+          </a>
+        </div>
+        <div id="burger" class="burger-container animate__animated"></div>
+
+        <div
+          id="links"
+          class="nav-links animate__faster hidden lg:flex items-center font-semibold text-xl"
+        >
+          <a href="#wrapper">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <div id="close"></div>
+        </div>
+        <div
+          id="socials"
+          class="nav-socials animate__faster hidden lg:flex items-center"
+        >
+          <a href="https://github.com/DeanWalsh" target="_blank"
+            ><svg
+              class="socials"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dean-walsh-060805201/"
+            target="_blank"
+            ><svg
+              class="socials"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              /></svg
+          ></a>
+          <a href="https://twitter.com/DeanW3326" target="_blank"
+            ><svg
+              class="socials"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+              /></svg
+          ></a>
+        </div>
+      </nav>
+      <div class="nav-bg absolute z-0"></div>
+      <main class="container max-w-5xl z-0">
+        <section
+          id="home"
+          class="4xl:grid min-h-screen animate__animated animate__fadeInUp"
+        >
+          <header class="z-10 md:grid md:grid-cols-1fr">
+            <div class="profile-picture">
+              <img
+                class="m-auto h-full"
+                src="/img/Humaaans - Wireframe.png"
+                alt="Dean Walsh"
+              />
             </div>
-            <div id="burger" class="burger-container animate__animated"></div>
+            <section class="header-about px-12 content-center align-middle">
+              <h1
+                class="text-3xl sm:text-4xl 4xl:text-5xl font-bold 4xl:p-4 p-2"
+              >
+                Frontend Developer.
+              </h1>
+              <h2
+                class="text-xl sm:text-2xl 4xl:text-2xl font-medium 4xl:p-4 p-2 italic"
+              >
+                Hi, I'm Dean. I design and develop websites whilst giving extra
+                care to CSS!
+              </h2>
+              <p
+                class="4xl:p-4 p-2 font-normal text-base 4xl:text-lg leading-relaxed"
+              >
+                With over 3 years of experience and a passion to learn new
+                technologies helps me to deliver quality websites and
+                applications!
+                <a class="font-medium" href="#about">Read more...</a>
+              </p>
+              <a class="contents" href="#contact"
+                ><button class="btn block mt-4 mb-8 mx-auto md:my-4 md:inline">
+                  Contact Me
+                </button></a
+              >
+            </section>
+          </header>
 
-
-            <div id="links" class="nav-links animate__faster hidden lg:flex items-center font-semibold text-xl">
-                <a href="#wrapper">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <div id="close"></div>
+          <div class="skills">
+            <!-- Update Modals for each skill (clickable) to JS DOM manipulation from CSS:focus  -->
+            <h2 class="text-3xl text-center font-bold my-6">Skills & Tools</h2>
+            <div class="skills-container flex flex-wrap justify-center">
+              <div tabindex="0" id="skill_html" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/html5.svg"
+                  alt=""
+                />
+                <p>HTML 5</p>
+                <div class="skills-hover" id="skill-html_hover">
+                  <p class="skill-hover-p">
+                    It all began with HTML early 2019, luckily the importance of
+                    semantic tags were made aware to me and I put best practise
+                    first learning HTML. The basics came quick but there is
+                    still advanced mark-up I am finding new to me which always
+                    keeps me interested in HTML.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_css" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/css3.svg"
+                  alt=""
+                />
+                <p>CSS 3</p>
+                <div class="skills-hover" id="skill-css_hover">
+                  <p class="skill-hover-p">
+                    Once I finished with HTML I got straight into Cascading
+                    Style Sheets and quickly saw how limitless you can be with
+                    creativity using CSS. It is by far my favourite 'language'
+                    to code and I love the relationship it forces you to develop
+                    with UI & UX in mind.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_js" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/javascript.svg"
+                  alt=""
+                />
+                <p>Javascript</p>
+                <div class="skills-hover" id="skill-js_hover">
+                  <p class="skill-hover-p">
+                    Javascript admittedly was a difficult language for me as I
+                    prefered using my creative side of the brain. With enough
+                    time spent using JS in projects however, I quickly became
+                    hooked with how much you can do (I really do believe you can
+                    achieve anything with JS!). I began with the basics like
+                    making clocks, calculators & password generators e.t.c. and
+                    then started to see how useful JS is for the DOM and
+                    interactivity.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_vue" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/vuejs.svg"
+                  alt=""
+                />
+                <p>Vue 3</p>
+                <div class="skills-hover" id="skill-vue_hover">
+                  <p class="skill-hover-p">
+                    I chose VUE.js as my first javascript framework due to how
+                    elegant the syntax looked and how it dealt with Single Page
+                    Application use. I also found the documentation to be
+                    amazingly wrote out and explained. I began learning and
+                    practising Vue in 2021 and I am now moving onto bigger
+                    projects with Vue and using some of it's amazing features
+                    such as router, slots, compositional API and of course add
+                    ons like Vuex!
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_sass" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/sass.svg"
+                  alt=""
+                />
+                <p>SASS</p>
+                <div class="skills-hover" id="skill-sass_hover">
+                  <p class="skill-hover-p">
+                    Once I got comfortable with CSS I jumped on SASS. I have
+                    been using it almost since I started coding and it's been a
+                    great tool to learn. It's a great way to make CSS more
+                    dynamic and flexible. Whenever I can I use mixins, nesting
+                    and functions to optimise my workflow effeciency.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_tailwind" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/tailwind-css.svg"
+                  alt=""
+                />
+                <p>Tailwind</p>
+                <div class="skills-hover" id="skill-tailwind_hover">
+                  <p class="skill-hover-p">
+                    I chose Tailwind CSS as my CSS library because of how
+                    lightweight it is. I like writing my own CSS usually however
+                    I have used this tech on large scallable projects.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_mysql" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/mysql.svg"
+                  alt=""
+                />
+                <p>MySQL</p>
+                <div class="skills-hover" id="skill-mysql_hover">
+                  <p class="skill-hover-p">
+                    Most of my SQL experience has been learning on the job with
+                    ecommerce platforms. MySQL being the most used, I learnt how
+                    to formulate queries and understood the structure of tables,
+                    columns and rows. With enough experience I quickly learnt
+                    how to update, join and delete.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_vscode" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/visualstudio.svg"
+                  alt=""
+                />
+                <p>VS Code</p>
+                <div class="skills-hover" id="skill-vscode_hover">
+                  <p class="skill-hover-p">
+                    VS Code has been my main IDE since I started coding, I have
+                    become very efficient with the keybinds/hotkeys and the
+                    various popular extensions.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_git" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/git.svg"
+                  alt=""
+                />
+                <p>Git</p>
+                <div class="skills-hover" id="skill-git_hover">
+                  <p class="skill-hover-p">
+                    I have primarily used Git and Github for Version control and
+                    have become accustomed with the Git workflow and it's most
+                    useful features and commands.
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" id="skill_figma" class="skill">
+                <img
+                  class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
+                  src="/svg/figma.svg"
+                  alt=""
+                />
+                <p>Figma</p>
+                <div class="skills-hover" id="skill-figma_hover">
+                  <p class="skill-hover-p">
+                    Figma is great for me to help visualise web apps or to help
+                    clients visualise their wants and needs. I have experience
+                    in complete mock ups and storyboarding with Figma.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div id="socials" class="nav-socials animate__faster hidden lg:flex items-center">
-                <a href="https://github.com/DeanWalsh" target="_blank"><svg class="socials"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                    </svg></a>
-                <a href="https://www.linkedin.com/in/dean-walsh-060805201/" target="_blank"><svg class="socials"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg></a>
-                <a href="https://twitter.com/DeanW3326" target="_blank"><svg class="socials"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
-                    </svg></a>
+          </div>
+
+          <a
+            class="pb-14 arrow-down animate__animated animate__shakeY animate__delay-5s"
+            href="#projects"
+            ><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 17l-4 4m0 0l-4-4m4 4V3"
+              ></path></svg
+          ></a>
+        </section>
+
+        <section id="projects">
+          <h2 class="projects-title text-4xl font-bold text-center pt-10">
+            Projects
+          </h2>
+          <div class="projects-container lg:px-4 xl:px-0">
+            <article
+              class="project lg:grid grid-cols-1fr my-12 lg:my-28 mx-auto w-4/5 lg:w-full"
+            >
+              <div class="project-pic project-a mx-auto justify-self-start">
+                <img
+                  class="m-auto shadow-2xl md:shadow-none"
+                  src="/img/gco_screenshot.jpg"
+                  width="410"
+                  height="230"
+                  alt=""
+                />
+              </div>
+              <div class="project-description text-center lg:text-left">
+                <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">
+                  GCO
+                </h3>
+                <p class="pb-4">
+                  Live Prestashop E-commerce website using PHP (Symphony
+                  Framework). Heavily modified php template files (.tpl).
+                  Designed, developed and maintained from the barebones default
+                  theme whilst working with multiple third-party plugins and
+                  modules.
+                </p>
+                <div class="project-links pb-4">
+                  <a href="https://gamingco.co.uk" target="_blank"
+                    ><button class="project-btn text-center mr-2">
+                      Live
+                    </button></a
+                  >
+                  <a
+                    ><button class="project-btn text-center mr-2 line-through">
+                      Github
+                    </button></a
+                  >
+                </div>
+                <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
+                  <button class="tech-btn lg:mr-2">Javascript</button>
+                  <button class="tech-btn lg:mr-2">CSS</button>
+                  <button class="tech-btn lg:mr-2">PHP</button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project lg:grid grid-cols-1fr lg:mb-28 mx-auto w-4/5 lg:w-full"
+            >
+              <div class="project-pic project-b mx-auto justify-self-end">
+                <img
+                  class="m-auto shadow-2xl lg:shadow-none"
+                  src="/img/Photography-Template.jpg"
+                  width="410"
+                  height="230"
+                  alt=""
+                />
+              </div>
+              <div
+                class="project-description text-center col-start-1 row-start-1 lg:text-left"
+              >
+                <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">
+                  Photography Template (WIP)
+                </h3>
+                <p class="pb-4">
+                  Website created for an amateur photographer using Vue.js that
+                  incorporates Vue Router, SPA, slots & SASS. Landing page uses
+                  a auto-slider and houses an interactive image collage.
+                </p>
+                <div class="project-links pb-4">
+                  <a
+                    href="https://deanwalshphotographytemplate.netlify.app/"
+                    target="_blank"
+                    ><button class="project-btn text-center mr-2">
+                      Live
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/DeanWalsh/PhotographyTemplate"
+                    target="_blank"
+                    class="line-through"
+                    ><button class="project-btn text-center mr-2">
+                      Github
+                    </button></a
+                  >
+                </div>
+                <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
+                  <button class="tech-btn lg:mr-2">Vue 3</button>
+                  <button class="tech-btn lg:mr-2">SASS</button>
+                  <button class="tech-btn lg:mr-2">Javascript</button>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="project lg:grid grid-cols-1fr my-12 lg:my-28 mx-auto w-4/5 lg:w-full"
+            >
+              <div class="project-pic project-a mx-auto justify-self-start">
+                <img
+                  class="m-auto shadow-2xl md:shadow-none"
+                  src="/img/FetchStartpage.jpg"
+                  width="410"
+                  height="230"
+                  alt=""
+                />
+              </div>
+              <div class="project-description text-center lg:text-left">
+                <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">
+                  Background fetch API Startpage
+                </h3>
+                <p class="pb-4">
+                  Browser Startpage using HTML, CSS & Javascript. Using the
+                  fetch method to get Unsplash images (with their respective
+                  usernames & descriptions) and shuffling them as backgrounds.
+                  Fully responsive with a clock and hide content button to
+                  further enjoy the images.
+                </p>
+                <div class="project-links pb-4">
+                  <a href="https://deanwalshdev.site/" target="_blank"
+                    ><button class="project-btn text-center mr-2">
+                      Live
+                    </button></a
+                  >
+                  <a
+                    href="https://github.com/DeanWalsh/FetchBgStartpage"
+                    target="_blank"
+                    ><button class="project-btn text-center mr-2">
+                      Github
+                    </button></a
+                  >
+                </div>
+                <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
+                  <button class="tech-btn lg:mr-2">Javascript</button>
+                  <button class="tech-btn lg:mr-2">CSS</button>
+                  <button class="tech-btn lg:mr-2">HTML</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section
+          id="about"
+          class="w-4/5 lg:w-full mx-auto mt-8 lg:mt-36 text-left lg:grid grid-cols-1fr"
+        >
+          <div class="about-description lg:px-12">
+            <h2 class="about-title text-4xl font-bold pb-10">About Me</h2>
+            <p class="font-normal text-base leading-relaxed">
+              I am a self-taught web developer from Ireland. I started messing
+              around with HTML, CSS and Javascript in 2019 and became obsessed
+              with designing and developing with specifics on responsive design.
+            </p>
+            <br />
+            <p class="font-normal text-base leading-relaxed">
+              Since then I quickly jumped into other languages either out of
+              curiosity or for jobs. I have worked with Javascript, Vue.js,
+              React, SASS, TailwindCSS, MySQL, Node.js, Nest.js, Python, PHP,
+              Laravel and Symphony. React and Vue being the main languages I am
+              working with now.
+            </p>
+            <br />
+            <p class="font-normal text-base leading-relaxed">
+              My background before web development was IT and building/fixing
+              PCs before I found coding. If I am not coding or learning
+              something new, I am probably playing a game or listening to/making
+              <a
+                class="font-bold"
+                href="https://soundcloud.com/deanwalshmusic"
+                target="_blank"
+                >soundtracks.</a
+              >
+            </p>
+          </div>
+          <div
+            class="about-picture m-auto mt-12 lg:mt-auto h-full w-auto p-4 lg:w-11/12"
+          >
+            <img
+              src="/img/TouchedUpProfilePic.jpg"
+              width="280"
+              height="325"
+              class="shadow-2xl rounded-100 w-auto m-auto h-full"
+              alt="Portait"
+            />
+          </div>
+        </section>
+        <section
+          id="contact"
+          class="w-4/5 lg:w-full mx-auto my-16 lg:mt-36 text-center lg:text-left lg:grid grid-cols-1fr"
+        >
+          <div class="contact-description lg:px-16">
+            <h2 class="contact-title text-4xl font-bold text-center pb-10">
+              Contact
+            </h2>
+            <p class="font-medium text-base leading-relaxed">
+              If you would like to get in touch, feel free to reach out via
+              Twitter or Linkedin. If you have a role or position you would like
+              to discuss, whether it be a project or a job opportunity, please
+              use the form to contact me.
+            </p>
+            <div
+              class="contact-socials flex flex-wrap sm:flex-nowrap justify-center my-12"
+            >
+              <a href="mailto:deanwalshdev@gmail.com"
+                ><svg
+                  class="socials"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 122.88 122.88"
+                >
+                  <path
+                    class="cls-1"
+                    d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Zm4.1,37.59L62,64.26,93.33,37.59ZM27.19,82.48l23.3-23.37-23.3-19V82.48ZM53.06,61.21,29,85.29H93.65l-23-24.08-7.57,6.45h0a1.66,1.66,0,0,1-2.12,0l-7.94-6.48ZM73.2,59.07,95.69,82.66V39.9L73.2,59.07Z"
+                  /></svg
+              ></a>
+              <a href="https://github.com/DeanWalsh" target="_blank"
+                ><svg
+                  class="socials"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dean-walsh-060805201/"
+                target="_blank"
+                ><svg
+                  class="socials"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  /></svg
+              ></a>
+              <a href="https://twitter.com/DeanW3326" target="_blank"
+                ><svg
+                  class="socials"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                  /></svg
+              ></a>
             </div>
-        </nav>
-        <div class="nav-bg absolute  z-0"></div>
-        <main class="container max-w-5xl z-0">
-            <section id="home" class="4xl:grid min-h-screen animate__animated animate__fadeInUp">
-                <header class="z-10 md:grid md:grid-cols-1fr">
-                    <div class="profile-picture">
-                        <img class="m-auto h-full" src="/img/Humaaans - Wireframe.png" alt="Dean Walsh">
-                    </div>
-                    <section class="header-about px-12 content-center align-middle">
-                        <h1 class="text-3xl sm:text-4xl 4xl:text-5xl font-bold 4xl:p-4 p-2">Frontend Developer.</h1>
-                        <h2 class="text-xl sm:text-2xl 4xl:text-2xl font-medium 4xl:p-4 p-2 italic">Hi, I'm Dean. I
-                            design and develop websites whilst giving
-                            extra care to CSS!</h2>
-                        <p class="4xl:p-4 p-2 font-normal text-base 4xl:text-lg leading-relaxed">With over 3 years of
-                            experience and a passion
-                            to learn new technologies helps me to deliver quality websites and applications! <a
-                                class=" font-medium" href="#about">Read more...</a></p>
-                        <a class="contents" href="#contact"><button
-                                class="btn block mt-4 mb-8 mx-auto md:my-4 md:inline">Contact
-                                Me</button></a>
-                    </section>
-                </header>
+          </div>
+          <form action="https://formspree.io/f/mayvzjlv" method="POST">
+            <input
+              name="name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+            />
+            <input
+              name="email"
+              type="email"
+              class="feedback-input"
+              placeholder="Email"
+            />
+            <textarea
+              name="message"
+              class="feedback-input"
+              placeholder="Comment"
+            ></textarea>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </section>
+      </main>
+      <div class="footer-bg absolute hidden"></div>
+      <a id="arrow-up" href="#wrapper"
+        ><svg
+          class="arrow-up"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 7l4-4m0 0l4 4m-4-4v18"
+          ></path></svg
+      ></a>
 
-                <div class="skills">
-                    <!-- Update Modals for each skill (clickable) to JS DOM manipulation from CSS:focus  -->
-                    <h2 class="text-3xl text-center font-bold my-6">Skills & Tools</h2>
-                    <div class="skills-container flex flex-wrap justify-center">
-                        <div tabindex="0" id="skill_html" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/html5.svg" alt="">
-                            <p>HTML 5</p>
-                            <div class="skills-hover" id="skill-html_hover">
-                                <p class="skill-hover-p">It all began with HTML early 2019, luckily the importance of
-                                    semantic tags
-                                    were made aware to me and I put best practise first learning HTML. The basics came
-                                    quick but there
-                                    is still advanced mark-up I am finding new to me which always keeps me interested in
-                                    HTML.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_css" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/css3.svg" alt="">
-                            <p>CSS 3</p>
-                            <div class="skills-hover" id="skill-css_hover">
-                                <p class="skill-hover-p">Once I finished with HTML I got straight into Cascading Style
-                                    Sheets and
-                                    quickly saw how limitless you can be with creativity using CSS. It is by far my
-                                    favourite 'language'
-                                    to code and I love the relationship it forces you to develop with UI & UX in mind.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_js" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/javascript.svg" alt="">
-                            <p>Javascript</p>
-                            <div class="skills-hover" id="skill-js_hover">
-                                <p class="skill-hover-p">Javascript admittedly was a difficult language for me as I
-                                    prefered using my
-                                    creative side of the brain. With enough time spent using JS in projects however, I
-                                    quickly became
-                                    hooked with how much you can do (I really do believe you can achieve anything with
-                                    JS!). I began
-                                    with the basics like making clocks, calculators & password generators e.t.c. and
-                                    then started to
-                                    see how useful JS is for the DOM and interactivity.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_vue" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/vuejs.svg" alt="">
-                            <p>Vue 3</p>
-                            <div class="skills-hover" id="skill-vue_hover">
-                                <p class="skill-hover-p">I chose VUE.js as my first javascript framework due to how
-                                    elegant the syntax
-                                    looked and how it dealt with Single Page Application use. I also found the
-                                    documentation to be amazingly
-                                    wrote out and explained. I began learning and practising Vue in 2021 and I am now
-                                    moving onto bigger
-                                    projects with Vue and using some of it's amazing features such as router, slots,
-                                    compositional API and
-                                    of course add ons like Vuex!
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_sass" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/sass.svg" alt="">
-                            <p>SASS</p>
-                            <div class="skills-hover" id="skill-sass_hover">
-                                <p class="skill-hover-p">Once I got comfortable with CSS I jumped on SASS. I have been
-                                    using it almost since I started coding
-                                    and it's been a great tool to learn. It's a great way to make CSS more dynamic and
-                                    flexible. Whenever I
-                                    can I use mixins, nesting and functions to optimise my workflow effeciency.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_tailwind" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/tailwind-css.svg" alt="">
-                            <p>Tailwind</p>
-                            <div class="skills-hover" id="skill-tailwind_hover">
-                                <p class="skill-hover-p">I chose Tailwind CSS as my CSS library because of how
-                                    lightweight it is. I
-                                    like writing my own CSS usually however I have used this tech on large scallable
-                                    projects.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_mysql" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/mysql.svg" alt="">
-                            <p>MySQL</p>
-                            <div class="skills-hover" id="skill-mysql_hover">
-                                <p class="skill-hover-p">Most of my SQL experience has been learning on the job with
-                                    ecommerce platforms.
-                                    MySQL being the most used, I learnt how to formulate queries and understood the
-                                    structure of tables,
-                                    columns and rows. With enough experience I quickly learnt how to update, join and
-                                    delete.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_vscode" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/visualstudio.svg" alt="">
-                            <p>VS Code</p>
-                            <div class="skills-hover" id="skill-vscode_hover">
-                                <p class="skill-hover-p">VS Code has been my main IDE since I started coding, I have
-                                    become very efficient with the
-                                    keybinds/hotkeys and the various popular extensions.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_git" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/git.svg" alt="">
-                            <p>Git</p>
-                            <div class="skills-hover" id="skill-git_hover">
-                                <p class="skill-hover-p">I have primarily used Git and Github for Version control and
-                                    have become accustomed with
-                                    the Git workflow and it's most useful features and commands.
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" id="skill_figma" class="skill">
-                            <img class="w-2/4 md:w-3/4 4xl:w-full py-2 px-0 md:px-8 4xl:py-4 4xl:px-8"
-                                src="/svg/figma.svg" alt="">
-                            <p>Figma</p>
-                            <div class="skills-hover" id="skill-figma_hover">
-                                <p class="skill-hover-p">Figma is great for me to help visualise web apps or to help
-                                    clients visualise
-                                    their wants and needs. I have experience in complete mock ups and storyboarding with
-                                    Figma.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a class="pb-14 arrow-down animate__animated animate__shakeY animate__delay-5s" href="#projects"><svg
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
-                    </svg></a>
-            </section>
-
-            <section id="projects">
-                <h2 class="projects-title text-4xl font-bold text-center pt-10">Projects</h2>
-                <div class="projects-container lg:px-4 xl:px-0">
-
-                    <article class="project lg:grid grid-cols-1fr my-12 lg:my-28 mx-auto w-4/5 lg:w-full">
-                        <div class="project-pic project-a mx-auto justify-self-start"><img
-                                class="m-auto shadow-2xl md:shadow-none" src="/img/gco_screenshot.jpg" width="410"
-                                height="230" alt=""></div>
-                        <div class="project-description text-center lg:text-left">
-                            <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">GCO</h3>
-                            <p class="pb-4">Live Prestashop E-commerce website using PHP (Symphony Framework). Heavily
-                                modified php template files (.tpl).
-                                Designed, developed and maintained from the barebones default theme whilst working with
-                                multiple third-party plugins and modules.</p>
-                            <div class="project-links pb-4">
-                                <a href="https://gamingco.co.uk" target="_blank"><button
-                                        class="project-btn text-center mr-2">Live</button></a>
-                                <a><button class="project-btn text-center mr-2 line-through">Github</button></a>
-                            </div>
-                            <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
-                                <button class="tech-btn lg:mr-2">Javascript</button>
-                                <button class="tech-btn lg:mr-2">CSS</button>
-                                <button class="tech-btn lg:mr-2">PHP</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project lg:grid grid-cols-1fr lg:mb-28 mx-auto w-4/5 lg:w-full">
-                        <div class="project-pic project-b mx-auto justify-self-end"><img
-                                class="m-auto shadow-2xl lg:shadow-none" src="/img/Photography-Template.jpg" width="410"
-                                height="230" alt=""></div>
-                        <div class="project-description text-center col-start-1 row-start-1 lg:text-left">
-                            <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">Photography Template (WIP)</h3>
-                            <p class="pb-4">Website created for an amateur photographer using Vue.js that incorporates
-                                Vue Router, SPA, slots & SASS.
-                                Landing page uses a auto-slider and houses an interactive image collage.</p>
-                            <div class="project-links pb-4">
-                                <a href="https://deanwalshphotographytemplate.netlify.app/" target="_blank"><button
-                                        class="project-btn text-center mr-2">Live</button></a>
-                                <a href="https://github.com/DeanWalsh/PhotographyTemplate" target="_blank"
-                                    class="line-through"><button
-                                        class="project-btn text-center mr-2 ">Github</button></a>
-                            </div>
-                            <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
-                                <button class="tech-btn lg:mr-2">Vue 3</button>
-                                <button class="tech-btn lg:mr-2">SASS</button>
-                                <button class="tech-btn lg:mr-2">Javascript</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project lg:grid grid-cols-1fr my-12 lg:my-28 mx-auto w-4/5 lg:w-full">
-                        <div class="project-pic project-a mx-auto justify-self-start"><img
-                                class="m-auto shadow-2xl md:shadow-none" src="/img/FetchStartpage.jpg" width="410"
-                                height="230" alt=""></div>
-                        <div class="project-description text-center lg:text-left">
-                            <h3 class="project-title text-3xl font-medium py-4 lg:pb-4">Background fetch API Startpage
-                            </h3>
-                            <p class="pb-4">Browser Startpage using HTML, CSS & Javascript. Using the fetch method to
-                                get Unsplash images (with their respective usernames & descriptions) and shuffling them
-                                as backgrounds.
-                                Fully responsive with a clock and hide content button to further enjoy the images.</p>
-                            <div class="project-links pb-4">
-                                <a href="https://deanwalshdev.site/" target="_blank"><button
-                                        class="project-btn text-center mr-2">Live</button></a>
-                                <a href="https://github.com/DeanWalsh/FetchBgStartpage" target="_blank"><button
-                                        class="project-btn text-center mr-2">Github</button></a>
-                            </div>
-                            <div class="project-stack lg:flex flex-wrap lg:flex-nowrap">
-                                <button class="tech-btn lg:mr-2">Javascript</button>
-                                <button class="tech-btn lg:mr-2">CSS</button>
-                                <button class="tech-btn lg:mr-2">HTML</button>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </section>
-            <section id="about" class="w-4/5 lg:w-full mx-auto mt-8 lg:mt-36 text-left lg:grid grid-cols-1fr">
-                <div class="about-description lg:px-12">
-                    <h2 class="about-title text-4xl font-bold pb-10">About Me</h2>
-                    <p class="font-normal text-base leading-relaxed">I am a self-taught web developer from Ireland. I
-                        started messing around with
-                        HTML and CSS in 2019 and became obsessed with designing and developing with
-                        specifics on responsive design.
-                    </p>
-                    <br>
-                    <p class="font-normal text-base leading-relaxed">Since then I quickly jumped into other languages
-                        either out of curiosity or
-                        for jobs. I have worked with PHP, Laravel, Javascript, Vue.js, SASS, MySQL,
-                        Node.js, TailwindCSS, and Symphony. Javascript and Vue 3 being the main languages I am working
-                        with now.
-                    </p>
-                    <br>
-                    <p class="font-normal text-base leading-relaxed">My background before web development was IT and
-                        building/fixing PCs before
-                        I found coding. If I am not coding or learning something new, I am probably playing
-                        a game or listening to/making <a class="font-bold" href="https://soundcloud.com/deanwalshmusic"
-                            target="_blank">soundtracks.</a>
-                    </p>
-                </div>
-                <div class="about-picture m-auto mt-12 lg:mt-auto h-full w-auto p-4 lg:w-11/12">
-                    <img src="/img/TouchedUpProfilePic.jpg" width="280" height="325"
-                        class="shadow-2xl rounded-100 w-auto m-auto h-full" alt="Portait">
-                </div>
-            </section>
-            <section id="contact"
-                class="w-4/5 lg:w-full mx-auto my-16 lg:mt-36 text-center lg:text-left lg:grid grid-cols-1fr">
-                <div class="contact-description lg:px-16">
-                    <h2 class="contact-title text-4xl font-bold text-center pb-10">Contact</h2>
-                    <p class="font-medium text-base leading-relaxed">If you would like to get in touch, feel free to
-                        reach out via Twitter or Linkedin.
-                        If you have a role or position you would like to discuss, whether it be a project or a job
-                        opportunity, please use the form to contact me.
-                    </p>
-                    <div class="contact-socials flex flex-wrap sm:flex-nowrap justify-center my-12">
-                        <a href="mailto:deanwalshdev@gmail.com"><svg class="socials" xmlns="http://www.w3.org/2000/svg"
-                                width="72" height="72" viewBox="0 0 122.88 122.88">
-                                <path class="cls-1"
-                                    d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Zm4.1,37.59L62,64.26,93.33,37.59ZM27.19,82.48l23.3-23.37-23.3-19V82.48ZM53.06,61.21,29,85.29H93.65l-23-24.08-7.57,6.45h0a1.66,1.66,0,0,1-2.12,0l-7.94-6.48ZM73.2,59.07,95.69,82.66V39.9L73.2,59.07Z" />
-                            </svg></a>
-                        <a href="https://github.com/DeanWalsh" target="_blank"><svg class="socials"
-                                xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg></a>
-                        <a href="https://www.linkedin.com/in/dean-walsh-060805201/" target="_blank"><svg class="socials"
-                                xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg></a>
-                        <a href="https://twitter.com/DeanW3326" target="_blank"><svg class="socials"
-                                xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
-                            </svg></a>
-                    </div>
-                </div>
-                <form action="https://formspree.io/f/mayvzjlv" method="POST">
-
-                    <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                    <input name="email" type="email" class="feedback-input" placeholder="Email" />
-                    <textarea name="message" class="feedback-input" placeholder="Comment"></textarea>
-                    <input type="submit" value="SUBMIT" />
-
-                </form>
-            </section>
-        </main>
-        <div class="footer-bg absolute hidden"></div>
-        <a id="arrow-up" href="#wrapper"><svg class="arrow-up" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18">
-                </path>
-            </svg></a>
-
-        <footer class=" h-1/6 w-full sm:flex justify-between md:justify-around p-4">
-            <span class="footer-copyright font-medium text-lg block text-center pb-6 sm:pb-0">Dean Walsh &copy; <span
-                    class="footer-copyright" id="year"></span></span>
-            <div class="footer-socials flex justify-center sm:justify-end">
-                <a href="https://github.com/DeanWalsh" target="_blank"><svg class="footer-socials"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                    </svg></a>
-                <a href="https://www.linkedin.com/in/dean-walsh-060805201/" target="_blank"><svg class="footer-socials"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg></a>
-                <a href="https://twitter.com/DeanW3326" target="_blank"><svg class="footer-socials"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
-                    </svg></a>
-            </div>
-        </footer>
+      <footer
+        class="h-1/6 w-full sm:flex justify-between md:justify-around p-4"
+      >
+        <span
+          class="footer-copyright font-medium text-lg block text-center pb-6 sm:pb-0"
+          >Dean Walsh &copy; <span class="footer-copyright" id="year"></span
+        ></span>
+        <div class="footer-socials flex justify-center sm:justify-end">
+          <a href="https://github.com/DeanWalsh" target="_blank"
+            ><svg
+              class="footer-socials"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              /></svg
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dean-walsh-060805201/"
+            target="_blank"
+            ><svg
+              class="footer-socials"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              /></svg
+          ></a>
+          <a href="https://twitter.com/DeanW3326" target="_blank"
+            ><svg
+              class="footer-socials"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+              /></svg
+          ></a>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 
-<script src="/app.js"></script>
-
+  <script src="/app.js"></script>
 </html>
