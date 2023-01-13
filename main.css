@@ -487,3 +487,46 @@ footer {
 .footer-copyright {
     color: var(--color_light);
 }
+
+
+
+
+
+
+
+    #wrapper {
+        background-color: rgb(186 230 253);
+        color: black;
+    }
+
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) and (min-width: 768px) {
+    #wrapper {
+        background-color: rgb(0 38 58);
+        color: white!important;
+    }
+
+    nav, h1, .skills-hover p {
+        color: #212121;
+    }
+    .arrow-down {
+        stroke: #fff;
+    }
+    .contact-socials .socials {
+        fill: #effaff;
+    }
+    footer, [type="submit"] {
+        background: #020c14;
+        outline: #020c14 solid 3px;
+    }
+    [type="submit"]:hover {
+        background: var(--text_light);
+        outline: #020c14 solid 3px;
+    }
+    p:not(#about p) {
+        font-size: 1.125rem!important;
+        letter-spacing: 1.5px!important;
+        font-weight: 400!important;
+    }
+}
